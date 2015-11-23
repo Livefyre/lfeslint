@@ -1,0 +1,20 @@
+{
+  "name": "lfeslint",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Livefyre ES Linter",
+  "author": "Livefyre <eng@livefyre.com>",
+  "contributors": {
+    "name": "Livefyre",
+    "email": "eng@livefyre.com"
+  },
+  "bin": {
+    "lfeslint": "./index.js"
+  },
+  "dependencies": {
+    "eslint": "1.10.0",
+    "eslint-plugin-react": "3.9.0",
+    "standard-engine": "2.2.3"
+  },
+  "repository": "https://github.com/Livefyre/lfeslint"
+}
