@@ -2,8 +2,7 @@ var path = require('path');
 var pkg = require('./package.json');
 
 var eslintConfig = {
-  configFile: path.join(__dirname, 'eslintrc.yml'),
-  envs: pkg.envs || ['node']
+  configFile: path.join(__dirname, 'eslintrc.yml')
 };
 
 module.exports = {

@@ -16,14 +16,6 @@ To run on a certain path
 lfeslint ./src
 ```
 
-### Set environment types
-lfesint defaults to a node based environment. To update the environments, add them to your package.json
-
-```json
-"lfeslint": {
-  "envs": ["mocha", "commonjs"]
-}
-
 ### Ignoring Files
 Certain paths - including `node_modules/**` and `*.min.js` - are ignored by default.
 
@@ -44,6 +36,8 @@ This project uses [`standard-engine](https://github.com/Flet/standard-engine), w
 [`eslint`](http://eslint.org/). All of the eslint directives will work - for example: `/*eslint-disable*/`
 
 ### Defining Globals in a project's  `package.json`
+Certain projects will need globals present to operate correctly.
+
 ```js
 {
   "lfeslint": {
