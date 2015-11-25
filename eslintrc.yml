@@ -33,6 +33,9 @@ rules:
    - 2
   no-fallthrough:
    - 0
+  comma-style:
+   - 2
+   - "last"
 env:
   es6: true
   node: true
