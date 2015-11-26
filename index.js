@@ -9,6 +9,7 @@ var CLIEngine = require('eslint').CLIEngine;
 var deepFillIn = require('mout/object/deepFillIn');
 var minimist = require('minimist');
 var multiline = require('multiline');
+var path = require('path');
 var pkgConfig = require('pkg-config');
 
 var opts = {
@@ -36,7 +37,9 @@ var argv = minimist(process.argv.slice(2), {
   ]
 });
 
-var perProjectConfig = pkgConfig('lfeslint') || {};
+var perProjectConfig = pkgConfig('lfeslint', {
+  root: false
+}) || {};
 argv = deepFillIn(argv, perProjectConfig);
 
 if (argv.help) {
@@ -67,6 +70,7 @@ if (argv.version) {
 }
 
 var cli = new CLIEngine({
+  configFile: path.join(__dirname, '.eslintrc.yml'),
   extensions: ['.js', '.jsx'],
   envs: argv.env && argv.env.length ? argv.env : ['browser', 'mocha', 'node', 'commonjs', 'es6'],
   ignorePattern: ['node_modules/', '.git/', 'converage/', '*.min.js', 'dist/'].concat(argv.ignore || []),
