@@ -36,12 +36,6 @@ rules:
   comma-style:
    - 2
    - "last"
-env:
-  es6: true
-  node: true
-  browser: true
-  mocha: true
-  commonjs: true
 extends: 'eslint:recommended'
 ecmaFeatures:
   jsx: true
