@@ -12,31 +12,31 @@ rules:
     - unix
   semi:
     - 2
-    - always
+    - "always"
   space-before-function-paren:
     - 2
-    - {"named": "never", "anonymous": "always"}
+    - {named: "never", anonymous: "always"}
   space-after-keywords:
     - 2
-    - "always"
+    - always
   jsx-quotes:
     - 2
-    - "prefer-double"
+    - prefer-double
   brace-style:
     - 2
-    - "1tbs"
-    - {"allowSingleLine": true}
+    - 1tbs
+    - {allowSingleLine: true}
   object-curly-spacing:
     - 2
-    - "never"
+    - never
   curly:
    - 2
   no-fallthrough:
    - 0
   comma-style:
    - 2
-   - "last"
-extends: 'eslint:recommended'
+   - last
+extends: eslint:recommended
 ecmaFeatures:
   jsx: true
   experimentalObjectRestSpread: true
