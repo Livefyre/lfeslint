@@ -51,6 +51,9 @@ rules:
     - {beforeColon: false, afterColon: true}
   no-console:
     - 0
+  no-unused-vars:
+    - 2
+    - {args: "none", vars: "all"}
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
