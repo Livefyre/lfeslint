@@ -79,6 +79,9 @@ var cli = new CLIEngine({
 });
 
 var report = cli.executeOnFiles(argv._.length ? argv._ : ['./']);
+if (argv.fix) {
+  CLIEngine.outputFixes(report);
+}
 
 var formatter = cli.getFormatter(argv.formatter || 'stylish');
 console.log(formatter(report.results));
