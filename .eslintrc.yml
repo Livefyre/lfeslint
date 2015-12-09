@@ -43,6 +43,12 @@ rules:
     - smart
   no-spaced-func:
     - 2
+  array-bracket-spacing:
+    - 2
+    - never
+  key-spacing:
+    - 2
+    - {beforeColon: false, afterColon: true}
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
