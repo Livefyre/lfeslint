@@ -49,6 +49,8 @@ rules:
   key-spacing:
     - 2
     - {beforeColon: false, afterColon: true}
+  no-console:
+    - 0
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
