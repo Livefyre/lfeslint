@@ -67,6 +67,9 @@ rules:
   max-depth:
     - 1
     - 4
+  radix:
+    - 2
+    - always
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
