@@ -60,6 +60,10 @@ rules:
   space-unary-ops:
     - 2
     - {words: true, nonwords: false}
+  spaced-comment:
+    - 2
+    - always
+    - {exceptions: ["*"]}
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
