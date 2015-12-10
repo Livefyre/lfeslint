@@ -54,6 +54,16 @@ rules:
   no-unused-vars:
     - 2
     - {args: "none", vars: "all"}
+  space-in-parens:
+    - 2
+    - "never"
+  space-unary-ops:
+    - 2
+    - {words: true, nonwords: false}
+  spaced-comment:
+    - 2
+    - always
+    - {exceptions: ["*"]}
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
