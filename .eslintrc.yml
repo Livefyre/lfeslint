@@ -54,6 +54,9 @@ rules:
   no-unused-vars:
     - 2
     - {args: "none", vars: "all"}
+  space-in-parens:
+    - 2
+    - "never"
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
