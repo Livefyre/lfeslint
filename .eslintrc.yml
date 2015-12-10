@@ -57,6 +57,9 @@ rules:
   space-in-parens:
     - 2
     - "never"
+  space-unary-ops:
+    - 2
+    - {words: true, nonwords: false}
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
