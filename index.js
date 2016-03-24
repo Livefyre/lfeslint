@@ -84,4 +84,7 @@ if (argv.fix) {
 }
 
 var formatter = cli.getFormatter(argv.formatter || 'stylish');
-console.log(formatter(report.results));
+if (report.errorCount || report.warningCount) {
+  console.log(formatter(report.results));
+  process.exit(1);
+}
