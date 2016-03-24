@@ -70,10 +70,22 @@ rules:
   radix:
     - 2
     - always
-extends: eslint:recommended
+  prop-types:
+    - 0
+  react/prop-types:
+    - 0
+  react/no-danger:
+    - 0
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
 parserOptions:
   ecmaFeatures:
     jsx: true
     experimentalObjectRestSpread: true
 plugins:
   - react
+settings:
+  react:
+    pragma: "React"
+    version: "0.13.3"
