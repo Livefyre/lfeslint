@@ -71,6 +71,8 @@ rules:
   radix:
     - 2
     - always
+  react/jsx-uses-react:
+    - 1
 extends: eslint:recommended
 ecmaFeatures:
   jsx: true
