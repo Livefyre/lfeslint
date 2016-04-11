@@ -80,7 +80,7 @@ var cli = new CLIEngine({
   configFile: configFile,
   extensions: ['.js', '.jsx'],
   envs: argv.env && argv.env.length ? argv.env : ['browser', 'mocha', 'node', 'commonjs', 'es6'],
-  ignorePattern: ['node_modules/', '.git/', 'converage/', '*.min.js', 'dist/'].concat(argv.ignore || []),
+  ignorePattern: ['node_modules/', '.git/', 'coverage/', '**/*.min.js', 'dist/'].concat(argv.ignore || []),
   fix: argv.fix || false,
   globals: argv.global && argv.global.length ? argv.global : []
 });
