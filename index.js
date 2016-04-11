@@ -11,6 +11,7 @@ var minimist = require('minimist');
 var multiline = require('multiline');
 var path = require('path');
 var pkgConfig = require('pkg-config');
+var fs = require('fs');
 
 var opts = {
   version: require('./package.json').version,
@@ -69,8 +70,14 @@ if (argv.version) {
   process.exit(0);
 }
 
+var configFile = path.join(__dirname, '.eslintrc.yml');
+var localConfigFile = path.join(process.cwd(), '.eslintrc.yml');
+if (fs.existsSync(localConfigFile)) {
+  configFile = localConfigFile;
+}
+
 var cli = new CLIEngine({
-  configFile: path.join(__dirname, '.eslintrc.yml'),
+  configFile: configFile,
   extensions: ['.js', '.jsx'],
   envs: argv.env && argv.env.length ? argv.env : ['browser', 'mocha', 'node', 'commonjs', 'es6'],
   ignorePattern: ['node_modules/', '.git/', 'converage/', '*.min.js', 'dist/'].concat(argv.ignore || []),
