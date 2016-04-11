@@ -74,8 +74,6 @@ rules:
   react/jsx-uses-react:
     - 1
 extends: eslint:recommended
-ecmaFeatures:
-  jsx: true
-  experimentalObjectRestSpread: true
+parser: babel-eslint
 plugins:
   - react
