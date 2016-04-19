@@ -73,6 +73,8 @@ rules:
     - always
   react/jsx-uses-react:
     - 1
+  eol-last:
+    - 2
 extends: eslint:recommended
 parser: babel-eslint
 plugins:
