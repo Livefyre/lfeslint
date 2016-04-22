@@ -75,6 +75,11 @@ rules:
     - 1
   eol-last:
     - 2
+  arrow-body-style:
+    - 2
+    - as-needed
+  arrow-spacing:
+    - 2
 extends: eslint:recommended
 parser: babel-eslint
 plugins:
