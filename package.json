@@ -1,6 +1,5 @@
 {
   "name": "lfeslint",
-  "private": true,
   "version": "1.0.0",
   "description": "Livefyre ES Linter",
   "author": "Livefyre <eng@livefyre.com>",
