@@ -14,12 +14,11 @@ rules:
   semi:
     - 2
     - "always"
+  keyword-spacing:
+    - 2
   space-before-function-paren:
     - 2
     - {named: "never", anonymous: "always"}
-  space-after-keywords:
-    - 2
-    - always
   jsx-quotes:
     - 2
     - prefer-double
@@ -73,6 +72,12 @@ rules:
     - always
   react/jsx-uses-react:
     - 1
+  react/no-danger:
+    - 0
+  react/prop-types:
+    - 0
+  react/no-deprecated:
+    - 1
   eol-last:
     - 2
   arrow-body-style:
@@ -80,7 +85,7 @@ rules:
     - as-needed
   arrow-spacing:
     - 2
-extends: eslint:recommended
+extends: ["eslint:recommended", "plugin:react/recommended"]
 parser: babel-eslint
 plugins:
   - react
