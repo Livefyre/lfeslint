@@ -36,7 +36,7 @@ rules:
     - 0
   comma-style:
     - 2
-    - last
+    - first
   no-irregular-whitespace:
     - 2
   eqeqeq:
