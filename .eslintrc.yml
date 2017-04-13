@@ -25,7 +25,7 @@ rules:
     - prefer-double
   brace-style:
     - 2
-    - 1tbs
+    - stroustrup
     - {allowSingleLine: true}
   object-curly-spacing:
     - 2
