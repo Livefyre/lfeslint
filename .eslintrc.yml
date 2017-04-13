@@ -16,7 +16,7 @@ rules:
     - "always"
   space-before-function-paren:
     - 2
-    - {named: "never", anonymous: "always"}
+    - never
   space-after-keywords:
     - 2
     - always
