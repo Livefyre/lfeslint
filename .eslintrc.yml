@@ -80,6 +80,9 @@ rules:
     - as-needed
   arrow-spacing:
     - 2
+  space-before-blocks:
+    - 2
+    - always
 extends: eslint:recommended
 parser: babel-eslint
 plugins:
