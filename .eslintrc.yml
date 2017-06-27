@@ -5,7 +5,7 @@ rules:
   indent-legacy:
     - 2
     - 2
-    - { SwitchCase: 1}
+    - {SwitchCase: 1}
   quotes:
     - 2
     - single
@@ -18,7 +18,7 @@ rules:
     - always
   space-before-function-paren:
     - 2
-    - { anonymous: always, named: never, asyncArrow: ignore}
+    - {anonymous: always, named: never, asyncArrow: ignore}
   keyword-spacing:
     - 2
     - { after: true}
@@ -28,7 +28,7 @@ rules:
   brace-style:
     - 2
     - 1tbs
-    - { allowSingleLine: true}
+    - {allowSingleLine: true}
   object-curly-spacing:
     - 2
     - never
@@ -51,12 +51,12 @@ rules:
     - never
   key-spacing:
     - 2
-    - { beforeColon: false, afterColon: true}
+    - {beforeColon: false, afterColon: true}
   no-console:
     - 0
   no-unused-vars:
     - 2
-    - { args: "none", vars: "all", varsIgnorePattern: "[rR]eact"}
+    - {args: "none", vars: "all", varsIgnorePattern: "[rR]eact"}
   space-in-parens:
     - 2
     - never
@@ -66,7 +66,7 @@ rules:
   spaced-comment:
     - 2
     - always
-    - { exceptions: ["*"]}
+    - {exceptions: ["*"]}
   max-depth:
     - 1
     - 4
