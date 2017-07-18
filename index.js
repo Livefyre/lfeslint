@@ -75,7 +75,8 @@ var cli = new CLIEngine({
   envs: argv.env && argv.env.length ? argv.env : ['browser', 'mocha', 'node', 'commonjs', 'es6'],
   ignorePattern: ['node_modules/', '.git/', 'coverage/', '**/*.min.js', 'dist/'].concat(argv.ignore || []),
   fix: argv.fix || false,
-  globals: argv.global && argv.global.length ? argv.global : []
+  globals: argv.global && argv.global.length ? argv.global : [],
+  rulePaths: [path.join(__dirname, 'rules')]
 });
 
 var report = cli.executeOnFiles(argv._.length ? argv._ : ['./']);

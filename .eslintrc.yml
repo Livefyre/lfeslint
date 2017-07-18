@@ -87,17 +87,17 @@ rules:
     - always
   space-infix-ops:
     - 2
-  no-new-wrappers: 
+  no-new-wrappers:
     - 2
   no-self-compare:
     - 2
   no-nested-ternary:
     - 2
-  no-multiple-empty-lines: 
+  no-multiple-empty-lines:
     - 2
-  no-unneeded-ternary: 
+  no-unneeded-ternary:
     - 2
-  
+
   ## below rules are required to mimic eslint v1.0.0
   no-unsafe-finally:
     - off
@@ -106,29 +106,29 @@ rules:
   complexity:
     - off
     - 11
-  require-yield: 
+  require-yield:
     - 2
-  no-case-declarations: 
+  no-case-declarations:
     - 0
-  no-class-assign: 
+  no-class-assign:
     - 0
-  no-const-assign: 
+  no-const-assign:
     - 0
-  no-dupe-class-members: 
+  no-dupe-class-members:
     - 0
-  no-empty-pattern: 
+  no-empty-pattern:
     - 0
-  no-new-symbol: 
+  no-new-symbol:
     - 0
-  no-self-assign: 
+  no-self-assign:
     - 0
-  no-this-before-super: 
+  no-this-before-super:
     - 0
-  no-unexpected-multiline: 
+  no-unexpected-multiline:
     - 0
-  no-unused-labels: 
+  no-unused-labels:
     - 0
-  constructor-super: 
+  constructor-super:
     - 0
   no-compare-neg-zero:
     - off
@@ -136,13 +136,13 @@ rules:
     - off
   no-undef:
     - off
-  
+
   ## Below are rules that are needed for linter functionality when using React
   react/display-name:
     - 0
   react/jsx-closing-bracket-location:
     - 0
-  react/jsx-curly-spacing: 
+  react/jsx-curly-spacing:
     - 2
     - "never"
   react/jsx-indent-props:
@@ -179,10 +179,15 @@ rules:
     - 2
   react/require-extension:
     - 0
-    
+
+  # Custom rules
+  sort-imports:
+    - 2
+    - always
+
 plugins:
   - react
-extends: 
+extends:
   - eslint:recommended
 parser: babel-eslint
 parserOptions:
