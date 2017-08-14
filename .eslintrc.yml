@@ -138,6 +138,8 @@ rules:
     - off
   no-undef:
     - off
+  no-multi-spaces:
+    - 2
 
   ## Below are rules that are needed for linter functionality when using React
   react/display-name:
@@ -148,9 +150,8 @@ rules:
     - 2
     - "never"
   react/jsx-indent-props:
-    - 0
-  react/jsx-max-props-per-line:
-    - 0
+    - 2
+    - 2
   react/jsx-no-duplicate-props:
     - 2
   react/jsx-no-literals:
@@ -181,6 +182,27 @@ rules:
     - 2
   react/require-extension:
     - 0
+  react/jsx-equals-spacing:
+    - 2
+  react/jsx-max-props-per-line
+    - 2
+    - {when: "multiline"}
+  react/jsx-closing-bracket-location
+    - 2
+    - props-aligned
+  react/jsx-closing-tag-location
+    - 2
+  react/jsx-tag-spacing
+    - 2
+  react/jsx-indent
+    - 2
+    - 2
+  react/jsx-wrap-multilines
+    - 2
+  react/jsx-boolean-value
+    - 2
+  react/self-closing-comp
+    - 2
 
   # Custom rules
   sort-imports:
