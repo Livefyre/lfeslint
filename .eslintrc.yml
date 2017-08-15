@@ -144,8 +144,6 @@ rules:
   ## Below are rules that are needed for linter functionality when using React
   react/display-name:
     - 0
-  react/jsx-closing-bracket-location:
-    - 0
   react/jsx-curly-spacing:
     - 2
     - "never"
@@ -184,24 +182,24 @@ rules:
     - 0
   react/jsx-equals-spacing:
     - 2
-  react/jsx-max-props-per-line
-    - 2
+  react/jsx-max-props-per-line:
+    - 0
     - {when: "multiline"}
-  react/jsx-closing-bracket-location
-    - 2
+  react/jsx-closing-bracket-location:
+    - 0
     - props-aligned
-  react/jsx-closing-tag-location
+  react/jsx-closing-tag-location:
+    - 0
+  react/jsx-tag-spacing:
+    - 0
+  react/jsx-indent:
+    - 0
     - 2
-  react/jsx-tag-spacing
+  react/jsx-wrap-multilines:
+    - 0
+  react/jsx-boolean-value:
     - 2
-  react/jsx-indent
-    - 2
-    - 2
-  react/jsx-wrap-multilines
-    - 2
-  react/jsx-boolean-value
-    - 2
-  react/self-closing-comp
+  react/self-closing-comp:
     - 2
 
   # Custom rules
