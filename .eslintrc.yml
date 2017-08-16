@@ -183,20 +183,18 @@ rules:
   react/jsx-equals-spacing:
     - 2
   react/jsx-max-props-per-line:
-    - 0
-    - {when: "multiline"}
+    - 2
+    - {when: multiline}
   react/jsx-closing-bracket-location:
-    - 0
-    - props-aligned
-  react/jsx-closing-tag-location:
-    - 0
+    - 2
+    - after-props
   react/jsx-tag-spacing:
-    - 0
+    - 2
   react/jsx-indent:
-    - 0
+    - 2
     - 2
   react/jsx-wrap-multilines:
-    - 0
+    - 2
   react/jsx-boolean-value:
     - 2
   react/self-closing-comp:
