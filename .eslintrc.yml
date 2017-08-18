@@ -197,6 +197,9 @@ rules:
     - 2
   react/jsx-boolean-value:
     - 2
+  react/jsx-first-prop-new-line:
+    - 2
+    - "multiline"
   react/self-closing-comp:
     - 2
 
