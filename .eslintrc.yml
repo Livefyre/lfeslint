@@ -208,10 +208,28 @@ rules:
     - 2
     - always
 
+  # label elements must have hasFor attributes, and can be either nested or use id
+  jsx-a11y/label-has-for:
+    - 2
+    - {
+        required: {
+          some: [ "nesting", "id" ]
+        }
+      }
+
+  # Some React components, like the List or Dialog, use autoFocus to indicate element to receive focus when the Modal or Overlay opens.
+  jsx-a11y/no-autofocus:
+    - 2
+    - {
+      ignoreNonDOM: true
+    }
+
 plugins:
+  - jsx-a11y
   - react
 extends:
   - eslint:recommended
+  - plugin:jsx-a11y/recommended
 parser: babel-eslint
 parserOptions:
  sourceType: "module"
